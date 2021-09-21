@@ -1,0 +1,83 @@
+body {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  margin: 0px;
+  background: #8787b5;
+}
+
+#drum-machine {
+  display: flex;
+  flex-direction: row;
+  height: 360px;
+  width: 600px;
+  margin: 0px;
+  border-radius: 10px;
+  background: #c0c0d8;
+}
+
+#drum-pads-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-row-gap: 10px;
+  grid-column-gap: 10px;
+  justify-items: center;
+  align-items: center;
+  height: auto;
+  width: auto;
+  padding: 35px;
+}
+
+.drum-pad {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 90px;
+  width: 100px;
+  border-radius: 10px;
+  background: #8787b5;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  user-select: none;
+}
+
+.drum-pad:hover {
+  background: purple;
+}
+
+.drum-pad-anim {
+  animation-name: anim;
+  animation-duration: 0.1s;
+}
+
+@keyframes anim {
+    0% {
+      background: yellow;
+    }
+    100% {
+      background: yellow;
+    }
+  }
+
+#display-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  width: 100%;
+  padding-top: 10px;
+  padding-right: 15px;
+}
+
+#display {
+  text-align: center;
+  font-weight: bold;
+  border-radius: 10px;
+  width: 100%;
+  background: #8787b5;
+}

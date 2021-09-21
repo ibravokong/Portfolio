@@ -1,0 +1,72 @@
+body {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  margin: 0px;
+  background: #8787b5;
+}
+
+#clock {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  --background: blue;
+}
+
+#labels {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+}
+
+#break-label, #session-label {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  width: 200px;
+  border-style: solid;
+  border-radius: 30px;
+  background: #61619e;
+}
+
+#timer-label {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-style: solid;
+  border-radius: 30px;
+  background: #61619e;
+}
+
+#timer-label h2 {
+  font-size: 60px;
+  margin: 0px 0px 20px 0px;
+}
+
+#timer-label button {
+  font-size: 15px;
+  width: 80px;
+  margin: 0px 0px 10px 0px;
+}
+
+.button-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100px;
+}
+
+.button-section h3 {
+  font-size: 20px;
+  margin: 0px;
+}
+
+.button-section button {
+  width: 30px;
+  height: 30px;
+}
