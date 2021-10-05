@@ -1,0 +1,48 @@
+body {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  margin: 0px;
+  background: #8787b5;
+}
+
+#heatMap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: white;
+}
+
+#heatMap h2 {
+  margin-top: 0px;
+}
+
+#map {
+  position: relative;
+  width: 1300px;
+  height: 560px;
+}
+
+#x-axis, #y-axis {
+  font-family: Arial;
+  font-size: 14px;
+}
+
+#tooltip {
+  position: absolute;
+  border: solid;
+  border-radius: 5px;
+  padding: 10px;
+  opacity: 0;
+  pointer-events: none;
+  white-space: nowrap;
+  background: white;
+}
+
+#legend {
+  position: absolute;
+  outline: 1px solid black;
+}
