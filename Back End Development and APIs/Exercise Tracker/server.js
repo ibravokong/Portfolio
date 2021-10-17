@@ -13,16 +13,6 @@ app.use(cors());
 app.use(express.static('public'));
 app.use(bodyParser.urlencoded({ extended: false }));
 
-/*app.use((req, res, next) => {
-  console.log(`LOG: ${req.method} ${req.path}`);
-   if (req.method === 'POST') {
-     console.log('  body:', req.body);
-   } else {
-     console.log(' params:', req.params);
-   }
-  next();
-});*/
-
 app.use("/api/users", userRouter);
 
 app.get("/", (req, res) => {
